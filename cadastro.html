@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="csstcc.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    </head>
+    <body>
+        <div class="form">
+            <form method="post" action="inserttcc.php">
+                <p>Nome: </p>
+                <input type="text" name="v1" required/>
+                <p>Email: </p>
+                <input type="text" name="v2" required/>
+                <p>Telefone: </p>
+                <input type="text" id="tel" placeholder="(00)00000-0000" name="v3" required/>
+                <p>RG: </p>
+                <input type="text" id="rg" placeholder="XX-00.000.000" name="v4" required/>
+                <p>CNH: </p>
+                <input type="text" id="cnh" placeholder="00000000000" name="v5" required/>
+                <p>CPF: </p>
+                <input type="text" id="cpf" placeholder="000.000.000-00" name="v6" required/>
+                <p>Senha: </p>
+                <input type="password" name="v7" required/>
+                <p>Confirmar Senha: </p>
+                <input type="password" name="v8" required/>
+                <p><input type="submit" value="ENVIAR" class="button"/></p> 
+            </form>
+            <script type="text/javascript">
+                $("#tel").mask("(00)00000-0000");
+                $("#rg").mask("XX-00.000.000");
+                $("#cnh").mask("00000000000");
+                $("#cpf").mask("000.000.000-00");
+            </script>
+        </div>
+    </body>
+</html>
