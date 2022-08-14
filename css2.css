@@ -1,0 +1,83 @@
+body{
+    background-color: #102746;
+}
+
+div.login{
+    margin-top: 100px;
+    padding-top: 10px;
+    width: 300px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #446495;
+    border-radius: 30px;
+    padding-left: 120px;
+    box-shadow: 0px 0px 15px black;
+}
+
+form input{
+    border-radius: 15px;
+    margin-top: 5px;
+}
+
+p.barra{
+    color: #f0f0c8;
+}
+
+h1{
+    color: #f0f0c8;
+    margin-left: 45px;
+}
+input.button{
+    background-color: #446495;
+    color: #f0f0c8;
+    padding-top: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 40px;
+    height: 50px;
+    width: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: #bbaeae;
+}
+
+p{
+    font-family: "Lucida Console", monospace;
+}
+
+p.esqueceu{
+    font-size: 15px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px){
+  div.login{
+    width: 70%;
+    height: 100%;
+    margin-top: 180px;
+  }
+
+p.barra{
+    font-size: 18px;
+  }
+
+h1{
+    font-size: 40px;
+  }
+
+P{
+    font-size: 18px;
+}
+
+p.esqueceu{
+    font-size: 18px;
+}
+
+input.button{
+    padding: 20px;
+    font-size: 15px;
+}
+
+ }
