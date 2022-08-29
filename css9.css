@@ -1,0 +1,23 @@
+body{
+    background-color: #102746;
+}
+
+h1{
+    color: white;
+    margin-top: 5%;
+    margin-left: 45%;
+}
+
+p{
+    color: white;
+    margin-left: 28%;
+
+}
+
+input[type="text"]{
+    height: 100px;
+    width: 200px;
+    margin-left: 42%;
+    margin-top: 15px;
+}
+

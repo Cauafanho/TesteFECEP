@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css9.css">
+    <title>MAPAS</title>
+</head>
+<body>
+    <label> Selecione a cidade desejada : </label>
+    <select>
+        <option value="Selecione"> SELECIONE </option>
+        <option value="Paraisópolis"> PARAISÓPOLIS </option>
+    </select>
+    <br>
+    <form>
+    <label> Selecione a rua desejada :</label>
+    <select id="id">
+        <option> SELECIONE </option>
+        <option value="1" > R.MAL DEODORO </option>
+        <option value="2" > PRACA CEL.JOSÉ VIEIRA </option>
+        <option value="3"> R.BUENO DE PAIVA </option>
+    </select>
+    <input type="button" onclick="teste()" value="enviar"></button>
+    </form>
+    <script>
+   function teste()
+   {   
+       var x= document.getElementById('id').value;  
+       
+ switch(x){
+  case '1':
+    document.write('');
+    document.write('<iframe src="https://www.google.com/maps/embed?pb=!4v1661100967736!6m8!1m7!1sCAoSLEFGMVFpcE51QWU3Q3Vfd043Wk0waW9SSmhta0F3V3duZmc5OFhydGVhanBy!2m2!1d-22.548882701453!2d-45.775062107581!3f92.14233284175319!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>');
+    break;
+  case '2':
+  document.write('USADO 2');
+    break;
+  case '3':
+  document.write('USADO 3');
+    break;
+  default:
+  document.write('ERRADO');
+}
+   }
+    </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+body{
+    background-color: #102746;
+}
+
+
+.text{
+margin-top: 30px;
+ box-shadow: -1px -1px 10px black;
+ height: 80px;
+ width: 150px;
+ border-radius: 20px;
+ background-color: #446495;
+ padding: 3px;
+ text-align: center;
+ margin-left: 47%;
+}
+
+.text a
+{
+    color: #f0f0c8;
+    text-decoration: none;
+}
+
+h1{
+    color : #f0f0c8;
+    margin-top: 100px;
+    margin-right: 0px;
+    margin-left: 30%;
+}
+
+td.cima{
+    color:white;
+    background-color: #102746;
+}
+
+td{
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+
+}
+
+table{
+    margin-left: 37%;
+    margin-top: 25px;
+}
+
+/* MENU */
+
+#menu_toogle{
+    opacity: 0;
+}
+
+#menu_toogle:checked + .menu_btn > span{
+    transform: rotate(45deg);
+}
+
+#menu_toogle:checked + .menu_btn > span::before{
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu_toogle:checked + .menu_btn > span::after{
+    top: 0;
+    transform: rotate(90deg);
+}
+
+/* BARRINHA NAV */
+
+#menu_toogle:checked + .menu_btn > section{
+    transform: rotate(140deg);
+}
+
+#menu_toogle:checked + .menu_btn > section::before{
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu_toogle:checked + .menu_btn > section::after{
+    top: 0;
+    transform: rotate(190deg);
+}
+
+#menu_toogle:checked ~ .menu_box{
+    left: 0 !important;
+}
+
+.menu_btn{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu_btn > span,
+.menu_btn > span::before,
+.menu_btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+}
+
+.menu_btn > span::before{
+    content: '';
+    top: 8px;
+}
+
+/* DESIGNER 3 LINHA */
+
+.menu_btn > section,
+.menu_btn > section::before,
+.menu_btn > section::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+}
+
+.menu_btn > section::before{
+    content: '';
+    top: -8px;
+}
+
+
+.menu_box{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: white;
+    box-shadow: 2px 2px 6px rgba(0, 0, -4);
+    transition-duration: .25s;
+}
+
+.menu_item:hover{
+    background-color: rgb(31, 31, 82);
+}
+
+li{
+    margin-top: 25px;
+}
+
+a.menu_item{
+    padding: 10px;
+}
+
+/*******************************************/
+
+@media only screen and (max-width: 600px){
+   div.alinhar{
+    margin-left: 30%;
+   }
+
+   div.inicio{
+    font-size: 10px;
+   }
+}
