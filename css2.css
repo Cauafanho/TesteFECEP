@@ -1,0 +1,95 @@
+body{
+    background-color: #102746;
+}
+
+div.login{
+    margin-top: 100px;
+    padding-top: 10px;
+    width: 300px;
+    height: 400px;
+    margin-left: 80px;
+    margin-right: auto;
+    /*background-color: #446495;
+    border-radius: 30px;
+    padding-left: 120px;
+    box-shadow: 0px 0px 15px black;*/
+}
+
+form input{
+    border-radius: 15px;
+    margin-top: 5px;
+}
+
+p.barra{
+    color: #f0f0c8;
+}
+
+h1{
+    color: #f0f0c8;
+    margin-left: 60px;
+    margin-top: -80px;
+}
+
+input.button{
+    width: 80px;
+    height: 5px;
+    margin-left: 20%;
+    background-color: #446495;
+    color: #f0f0c8;
+    border-color: #224e86;
+}
+
+input.button:hover{
+background-color: #f0f0c8(255, 255, 255);
+color: black;
+transition: 1s;
+}
+
+a{
+    text-decoration: none;  
+    color: #bbaeae;
+}
+
+p{
+    font-family: "Lucida Console", monospace;
+}
+
+p.esqueceu{
+    font-size: 15px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px){
+  div.login{
+    width: 70%;
+    height: 100%;
+    margin-top: 180px;
+  }
+
+p.barra{
+    font-size: 18px;
+  }
+
+h1.login{
+    margin-left: 15%;
+    font-size: 30px;
+  }
+
+P{
+    font-size: 18px;
+}
+
+p.esqueceu{
+    font-size: 18px;
+}
+
+input.button{
+    padding: 20px;
+    font-size: 15px;
+    position: relative;
+    align-items: center;
+    width: 45%;
+    line-height: 2px;
+}
+
+
+}

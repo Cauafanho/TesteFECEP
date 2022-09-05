@@ -1,0 +1,223 @@
+body{
+    background-color: #102746;
+}
+
+/*CSS DE RECUPERAR SENHA*/
+h1{
+	color: white;
+	margin-top: 5%;
+	margin-left: 30%;
+}
+
+p.desc{
+	color: white;
+	text-align: center;
+	font-size: 20px;
+}
+
+p{
+	color: #ffffff;
+	margin-left: 5%;
+}
+
+.textrec{
+    margin-top: 30px;
+    box-shadow: -1px -1px 10px black;
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #446495;
+    padding: 3px;
+    text-align: center;
+}
+    
+.text a    
+{
+    color: #f0f0c8;
+    text-decoration: none;
+}
+
+div.alinharrec{
+	margin-left: 45%;
+	margin-top: 35px;
+}
+
+input.bottom{
+	background-color: #446495;
+	color: white;
+	padding: 8px;
+	margin-left: 0px;
+}
+
+input{
+	border-radius: 15px;
+	padding-right: 100px;
+	margin-left: -75px;
+}
+
+/*CSS DA PAGINA INICIAL*/
+
+
+/* MENU */
+
+#menu_toogle{
+    opacity: 0;
+}
+
+#menu_toogle:checked + .menu_btn > span{
+    transform: rotate(45deg);
+}
+
+#menu_toogle:checked + .menu_btn > span::before{
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu_toogle:checked + .menu_btn > span::after{
+    top: 0;
+    transform: rotate(90deg);
+}
+
+/* BARRINHA NAV */
+
+#menu_toogle:checked + .menu_btn > section{
+    transform: rotate(140deg);
+}
+
+#menu_toogle:checked + .menu_btn > section::before{
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu_toogle:checked + .menu_btn > section::after{
+    top: 0;
+    transform: rotate(190deg);
+}
+
+#menu_toogle:checked ~ .menu_box{
+    left: 0 !important;
+}
+
+.menu_btn{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu_btn > span,
+.menu_btn > span::before,
+.menu_btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+}
+
+.menu_btn > span::before{
+    content: '';
+    top: 8px;
+}
+
+/* DESIGNER 3 LINHA */
+
+.menu_btn > section,
+.menu_btn > section::before,
+.menu_btn > section::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+}
+
+.menu_btn > section::before{
+    content: '';
+    top: -8px;
+}
+
+
+.menu_box{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: white;
+    box-shadow: 2px 2px 6px rgba(0, 0, -4);
+    transition-duration: .25s;
+}
+
+.menu_item:hover{
+    background-color: rgb(31, 31, 82);
+}
+
+li{
+    margin-top: 25px;
+}
+
+a.menu_item{
+    padding: 10px;
+}
+
+/*******************************************/
+
+@media only screen and (min-width: 300px) and (max-width: 800px){
+    h1{
+        color: white;
+        font-size: x-large;
+        margin-top: 20%;
+        margin-left: 18%;
+    }
+    
+    p.desc{
+        color: white;
+        text-align: center;
+        font-size: medium;
+        margin-top: 20%;
+        margin-left: 0%;
+    }
+    
+    p{
+        color: #ffffff;
+        font-size: medium;
+        margin-left: 42%;
+        margin-top: 20%;
+    }
+        
+    .text a    
+    {
+        color: #f0f0c8;
+        text-decoration: none;
+    }
+       
+    input.bottom{
+        background-color: #446495;
+        color: white;
+        padding: 8px;
+        margin-left: -5px;
+    }
+    
+    input[type="text"]{
+        width: 110px;
+        margin-left: 20%;
+    }
+
+    /*CSS PAGINA PRINCIPAL*/
+     div.container{
+        margin-top: 40%;
+     }
+    
+    
+}
+ 

@@ -1,0 +1,198 @@
+body{
+    background-color: #102746;
+}
+
+label{
+    color: white;
+}
+
+.cidade{
+    width: 185px;
+}
+
+.alinhar{
+    margin-top: 15%;
+    margin-left: 30%;
+}
+
+.direita{
+    margin-left: 22px;
+}
+
+.distancia{
+    margin-top: 20px;
+}
+
+input[type="button"]{
+    height: 20px;
+    background-color: #446495;
+    color: white;
+    box-shadow: none;
+}
+
+.text1{
+    color: #f0f0c8;
+    text-decoration: none;
+    margin-top: 30px;
+    box-shadow: -1px -1px 10px black;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #446495;
+    padding: 3px;
+}
+
+div.mover{
+    margin-top: 20px;
+    margin-left: 192px;
+}
+
+
+
+/* MENU */
+
+#menu_toogle{
+    opacity: 0;
+}
+
+#menu_toogle:checked + .menu_btn > span{
+    transform: rotate(45deg);
+}
+
+#menu_toogle:checked + .menu_btn > span::before{
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu_toogle:checked + .menu_btn > span::after{
+    top: 0;
+    transform: rotate(90deg);
+}
+
+/* BARRINHA NAV */
+
+#menu_toogle:checked + .menu_btn > section{
+    transform: rotate(140deg);
+}
+
+#menu_toogle:checked + .menu_btn > section::before{
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu_toogle:checked + .menu_btn > section::after{
+    top: 0;
+    transform: rotate(190deg);
+}
+
+#menu_toogle:checked ~ .menu_box{
+    left: 0 !important;
+}
+
+.menu_btn{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu_btn > span,
+.menu_btn > span::before,
+.menu_btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+}
+
+.menu_btn > span::before{
+    content: '';
+    top: 8px;
+}
+
+/* DESIGNER 3 LINHA */
+
+.menu_btn > section,
+.menu_btn > section::before,
+.menu_btn > section::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+}
+
+.menu_btn > section::before{
+    content: '';
+    top: -8px;
+}
+
+
+.menu_box{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #bdd1ee;
+    box-shadow: 2px 2px 6px rgba(0, 0, -4);
+    transition-duration: .25s;
+}
+
+.menu_item:hover{
+    background-color: rgb(197, 182, 182);
+}
+
+li{
+    margin-top: 50px;
+}
+
+/*******************************************/
+
+@media only screen and (max-width: 600px){
+    .alinhar{
+        margin-left: 15%;
+    }
+
+    div.mover{
+        margin-left: 20%;
+    }
+
+    label{
+        margin-left: 10%;
+        font-size: 20px;
+    }
+
+    .direita{
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+
+    .cidade{
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+
+    input[type="button"]{
+        margin-top: 10%;
+        margin-left: 20%;
+        border-radius: none;
+        border-radius: 5px;
+    }
+
+    option{
+        height: 10px;
+        width: 10px;
+    }
+
+}

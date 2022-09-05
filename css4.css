@@ -1,0 +1,162 @@
+body{
+    background-color: #102746;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    margin-left: 40%;
+    margin-top: 50px;
+}
+
+h1{
+    text-align: center;
+    color: #f0f0c8;
+    margin-top: 100px;
+}
+
+p{
+    margin-left: 38%;
+    color: #f0f0c8;
+    font-size: 25px;
+
+}
+
+/* MENU */
+
+#menu_toogle{
+    opacity: 0;
+}
+
+#menu_toogle:checked + .menu_btn > span{
+    transform: rotate(45deg);
+}
+
+#menu_toogle:checked + .menu_btn > span::before{
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu_toogle:checked + .menu_btn > span::after{
+    top: 0;
+    transform: rotate(90deg);
+}
+
+/* BARRINHA NAV */
+
+#menu_toogle:checked + .menu_btn > section{
+    transform: rotate(140deg);
+}
+
+#menu_toogle:checked + .menu_btn > section::before{
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu_toogle:checked + .menu_btn > section::after{
+    top: 0;
+    transform: rotate(190deg);
+}
+
+#menu_toogle:checked ~ .menu_box{
+    left: 0 !important;
+}
+
+.menu_btn{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu_btn > span,
+.menu_btn > span::before,
+.menu_btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+}
+
+.menu_btn > span::before{
+    content: '';
+    top: 8px;
+}
+
+/* DESIGNER 3 LINHA */
+
+.menu_btn > section,
+.menu_btn > section::before,
+.menu_btn > section::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+}
+
+.menu_btn > section::before{
+    content: '';
+    top: -8px;
+}
+
+
+.menu_box{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: white;
+    box-shadow: 2px 2px 6px rgba(0, 0, -4);
+    transition-duration: .25s;
+}
+
+.menu_item:hover{
+    background-color: rgb(31, 31, 82);
+}
+
+li{
+    margin-top: 25px;
+}
+
+a.menu_item{
+    padding: 10px;
+}
+
+/*******************************************/
+
+@media only screen and (min-width: 300px) and (max-width: 500px){
+
+    .container{
+        margin-top: 40%;
+    }
+
+    h1{
+        font-size: 30px;
+        margin-top: 30%;
+        margin-left: 7%;
+    }
+    
+    p{
+        font-size: 130%;
+        margin-left: 34%;
+    }
+
+    img{
+        width: 80px;
+        height: 80px;
+        margin-left: 43%;
+    }
+
+}
